@@ -1,0 +1,243 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.example.myapplication"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="15"
+8-->D:\Lucas\Projetos\AndroidStudio\Parque\app\src\main\AndroidManifest.xml
+9        android:targetSdkVersion="29" />
+9-->D:\Lucas\Projetos\AndroidStudio\Parque\app\src\main\AndroidManifest.xml
+10
+11    <!--
+12         The ACCESS_COARSE/FINE_LOCATION permissions are not required to use
+13         Google Maps Android API v2, but you must specify either coarse or fine
+14         location permissions for the 'MyLocation' functionality.
+15    -->
+16    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+16-->D:\Lucas\Projetos\AndroidStudio\Parque\app\src\main\AndroidManifest.xml:11:5-79
+16-->D:\Lucas\Projetos\AndroidStudio\Parque\app\src\main\AndroidManifest.xml:11:22-76
+17    <uses-permission android:name="android.permission.INTERNET" />
+17-->D:\Lucas\Projetos\AndroidStudio\Parque\app\src\main\AndroidManifest.xml:12:5-67
+17-->D:\Lucas\Projetos\AndroidStudio\Parque\app\src\main\AndroidManifest.xml:12:22-64
+18    <uses-permission android:name="android.permission.CAMERA" />
+18-->D:\Lucas\Projetos\AndroidStudio\Parque\app\src\main\AndroidManifest.xml:13:5-65
+18-->D:\Lucas\Projetos\AndroidStudio\Parque\app\src\main\AndroidManifest.xml:13:22-62
+19    <uses-permission android:name="android.permission.VIBRATE" />
+19-->D:\Lucas\Projetos\AndroidStudio\Parque\app\src\main\AndroidManifest.xml:14:5-66
+19-->D:\Lucas\Projetos\AndroidStudio\Parque\app\src\main\AndroidManifest.xml:14:22-63
+20    <uses-permission android:name="android.permission.FLASHLIGHT" />
+20-->D:\Lucas\Projetos\AndroidStudio\Parque\app\src\main\AndroidManifest.xml:15:5-69
+20-->D:\Lucas\Projetos\AndroidStudio\Parque\app\src\main\AndroidManifest.xml:15:22-66
+21    <uses-permission android:name="android.permission.READ_CONTACTS" />
+21-->D:\Lucas\Projetos\AndroidStudio\Parque\app\src\main\AndroidManifest.xml:16:5-72
+21-->D:\Lucas\Projetos\AndroidStudio\Parque\app\src\main\AndroidManifest.xml:16:22-69
+22    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+22-->D:\Lucas\Projetos\AndroidStudio\Parque\app\src\main\AndroidManifest.xml:17:5-81
+22-->D:\Lucas\Projetos\AndroidStudio\Parque\app\src\main\AndroidManifest.xml:17:22-78
+23    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+23-->D:\Lucas\Projetos\AndroidStudio\Parque\app\src\main\AndroidManifest.xml:18:5-76
+23-->D:\Lucas\Projetos\AndroidStudio\Parque\app\src\main\AndroidManifest.xml:18:22-73
+24    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+24-->D:\Lucas\Projetos\AndroidStudio\Parque\app\src\main\AndroidManifest.xml:19:5-76
+24-->D:\Lucas\Projetos\AndroidStudio\Parque\app\src\main\AndroidManifest.xml:19:22-73
+25    <uses-permission android:name="android.permission.READ_HISTORY_BOOKMARKS" />
+25-->D:\Lucas\Projetos\AndroidStudio\Parque\app\src\main\AndroidManifest.xml:20:5-81
+25-->D:\Lucas\Projetos\AndroidStudio\Parque\app\src\main\AndroidManifest.xml:20:22-78
+26
+27    <!-- Don't require camera, as this requires a rear camera. This allows it to work on the Nexus 7 -->
+28    <uses-feature
+28-->[com.journeyapps:zxing-android-embedded:3.2.0] C:\Users\lucas\.gradle\caches\transforms-2\files-2.1\ac3308eef45f3a92013bc1ee37b0bc0f\jetified-zxing-android-embedded-3.2.0\AndroidManifest.xml:24:5-26:36
+29        android:name="android.hardware.camera"
+29-->[com.journeyapps:zxing-android-embedded:3.2.0] C:\Users\lucas\.gradle\caches\transforms-2\files-2.1\ac3308eef45f3a92013bc1ee37b0bc0f\jetified-zxing-android-embedded-3.2.0\AndroidManifest.xml:25:9-47
+30        android:required="false" />
+30-->[com.journeyapps:zxing-android-embedded:3.2.0] C:\Users\lucas\.gradle\caches\transforms-2\files-2.1\ac3308eef45f3a92013bc1ee37b0bc0f\jetified-zxing-android-embedded-3.2.0\AndroidManifest.xml:26:9-33
+31    <uses-feature
+31-->[com.journeyapps:zxing-android-embedded:3.2.0] C:\Users\lucas\.gradle\caches\transforms-2\files-2.1\ac3308eef45f3a92013bc1ee37b0bc0f\jetified-zxing-android-embedded-3.2.0\AndroidManifest.xml:27:5-29:36
+32        android:name="android.hardware.camera.front"
+32-->[com.journeyapps:zxing-android-embedded:3.2.0] C:\Users\lucas\.gradle\caches\transforms-2\files-2.1\ac3308eef45f3a92013bc1ee37b0bc0f\jetified-zxing-android-embedded-3.2.0\AndroidManifest.xml:28:9-53
+33        android:required="false" /> <!-- TODO replace above two with next line after Android 4.2 -->
+33-->[com.journeyapps:zxing-android-embedded:3.2.0] C:\Users\lucas\.gradle\caches\transforms-2\files-2.1\ac3308eef45f3a92013bc1ee37b0bc0f\jetified-zxing-android-embedded-3.2.0\AndroidManifest.xml:29:9-33
+34    <!-- <uses-feature android:name="android.hardware.camera.any"/> -->
+35    <uses-feature
+35-->[com.journeyapps:zxing-android-embedded:3.2.0] C:\Users\lucas\.gradle\caches\transforms-2\files-2.1\ac3308eef45f3a92013bc1ee37b0bc0f\jetified-zxing-android-embedded-3.2.0\AndroidManifest.xml:32:5-34:36
+36        android:name="android.hardware.camera.autofocus"
+36-->[com.journeyapps:zxing-android-embedded:3.2.0] C:\Users\lucas\.gradle\caches\transforms-2\files-2.1\ac3308eef45f3a92013bc1ee37b0bc0f\jetified-zxing-android-embedded-3.2.0\AndroidManifest.xml:33:9-57
+37        android:required="false" />
+37-->[com.journeyapps:zxing-android-embedded:3.2.0] C:\Users\lucas\.gradle\caches\transforms-2\files-2.1\ac3308eef45f3a92013bc1ee37b0bc0f\jetified-zxing-android-embedded-3.2.0\AndroidManifest.xml:34:9-33
+38    <uses-feature
+38-->[com.journeyapps:zxing-android-embedded:3.2.0] C:\Users\lucas\.gradle\caches\transforms-2\files-2.1\ac3308eef45f3a92013bc1ee37b0bc0f\jetified-zxing-android-embedded-3.2.0\AndroidManifest.xml:35:5-37:36
+39        android:name="android.hardware.camera.flash"
+39-->[com.journeyapps:zxing-android-embedded:3.2.0] C:\Users\lucas\.gradle\caches\transforms-2\files-2.1\ac3308eef45f3a92013bc1ee37b0bc0f\jetified-zxing-android-embedded-3.2.0\AndroidManifest.xml:36:9-53
+40        android:required="false" />
+40-->[com.journeyapps:zxing-android-embedded:3.2.0] C:\Users\lucas\.gradle\caches\transforms-2\files-2.1\ac3308eef45f3a92013bc1ee37b0bc0f\jetified-zxing-android-embedded-3.2.0\AndroidManifest.xml:37:9-33
+41    <uses-feature
+41-->[com.journeyapps:zxing-android-embedded:3.2.0] C:\Users\lucas\.gradle\caches\transforms-2\files-2.1\ac3308eef45f3a92013bc1ee37b0bc0f\jetified-zxing-android-embedded-3.2.0\AndroidManifest.xml:38:5-40:36
+42        android:name="android.hardware.screen.landscape"
+42-->[com.journeyapps:zxing-android-embedded:3.2.0] C:\Users\lucas\.gradle\caches\transforms-2\files-2.1\ac3308eef45f3a92013bc1ee37b0bc0f\jetified-zxing-android-embedded-3.2.0\AndroidManifest.xml:39:9-57
+43        android:required="false" />
+43-->[com.journeyapps:zxing-android-embedded:3.2.0] C:\Users\lucas\.gradle\caches\transforms-2\files-2.1\ac3308eef45f3a92013bc1ee37b0bc0f\jetified-zxing-android-embedded-3.2.0\AndroidManifest.xml:40:9-33
+44    <uses-feature
+44-->[com.journeyapps:zxing-android-embedded:3.2.0] C:\Users\lucas\.gradle\caches\transforms-2\files-2.1\ac3308eef45f3a92013bc1ee37b0bc0f\jetified-zxing-android-embedded-3.2.0\AndroidManifest.xml:41:5-43:36
+45        android:name="android.hardware.wifi"
+45-->[com.journeyapps:zxing-android-embedded:3.2.0] C:\Users\lucas\.gradle\caches\transforms-2\files-2.1\ac3308eef45f3a92013bc1ee37b0bc0f\jetified-zxing-android-embedded-3.2.0\AndroidManifest.xml:42:9-45
+46        android:required="false" /> <!-- Include required permissions for Google Maps API to run. -->
+46-->[com.journeyapps:zxing-android-embedded:3.2.0] C:\Users\lucas\.gradle\caches\transforms-2\files-2.1\ac3308eef45f3a92013bc1ee37b0bc0f\jetified-zxing-android-embedded-3.2.0\AndroidManifest.xml:43:9-33
+47    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+47-->[com.google.android.gms:play-services-maps:17.0.0] C:\Users\lucas\.gradle\caches\transforms-2\files-2.1\a3d702a77cbfacefb23de82416a0cb1f\play-services-maps-17.0.0\AndroidManifest.xml:23:5-79
+47-->[com.google.android.gms:play-services-maps:17.0.0] C:\Users\lucas\.gradle\caches\transforms-2\files-2.1\a3d702a77cbfacefb23de82416a0cb1f\play-services-maps-17.0.0\AndroidManifest.xml:23:22-76
+48
+49    <uses-feature
+49-->[com.google.android.gms:play-services-maps:17.0.0] C:\Users\lucas\.gradle\caches\transforms-2\files-2.1\a3d702a77cbfacefb23de82416a0cb1f\play-services-maps-17.0.0\AndroidManifest.xml:26:5-28:35
+50        android:glEsVersion="0x00020000"
+50-->[com.google.android.gms:play-services-maps:17.0.0] C:\Users\lucas\.gradle\caches\transforms-2\files-2.1\a3d702a77cbfacefb23de82416a0cb1f\play-services-maps-17.0.0\AndroidManifest.xml:27:9-41
+51        android:required="true" />
+51-->[com.google.android.gms:play-services-maps:17.0.0] C:\Users\lucas\.gradle\caches\transforms-2\files-2.1\a3d702a77cbfacefb23de82416a0cb1f\play-services-maps-17.0.0\AndroidManifest.xml:28:9-32
+52
+53    <application
+53-->D:\Lucas\Projetos\AndroidStudio\Parque\app\src\main\AndroidManifest.xml:22:5-71:19
+54        android:allowBackup="true"
+54-->D:\Lucas\Projetos\AndroidStudio\Parque\app\src\main\AndroidManifest.xml:23:9-35
+55        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+55-->[androidx.core:core:1.0.1] C:\Users\lucas\.gradle\caches\transforms-2\files-2.1\8f8ab13dc8f4e84e14a8bb3d9ac92bc4\core-1.0.1\AndroidManifest.xml:22:18-86
+56        android:debuggable="true"
+57        android:icon="@mipmap/painetech"
+57-->D:\Lucas\Projetos\AndroidStudio\Parque\app\src\main\AndroidManifest.xml:24:9-41
+58        android:label="PaineTech"
+58-->D:\Lucas\Projetos\AndroidStudio\Parque\app\src\main\AndroidManifest.xml:25:9-34
+59        android:roundIcon="@mipmap/painetech_round"
+59-->D:\Lucas\Projetos\AndroidStudio\Parque\app\src\main\AndroidManifest.xml:26:9-52
+60        android:screenOrientation="portrait"
+60-->D:\Lucas\Projetos\AndroidStudio\Parque\app\src\main\AndroidManifest.xml:27:9-45
+61        android:supportsRtl="true"
+61-->D:\Lucas\Projetos\AndroidStudio\Parque\app\src\main\AndroidManifest.xml:28:9-35
+62        android:testOnly="true"
+63        android:theme="@style/AppTheme" >
+63-->D:\Lucas\Projetos\AndroidStudio\Parque\app\src\main\AndroidManifest.xml:29:9-40
+64
+65        <!--
+66             The API key for Google Maps-based APIs is defined as a string resource.
+67             (See the file "res/values/google_maps_api.xml").
+68             Note that the API key is linked to the encryption key used to sign the APK.
+69             You need a different API key for each encryption key, including the release key that is used to
+70             sign the APK for publishing.
+71             You can define the keys for the debug and release targets in src/debug/ and src/release/.
+72        -->
+73        <meta-data
+73-->D:\Lucas\Projetos\AndroidStudio\Parque\app\src\main\AndroidManifest.xml:40:9-42:71
+74            android:name="com.google.android.geo.API_KEY"
+74-->D:\Lucas\Projetos\AndroidStudio\Parque\app\src\main\AndroidManifest.xml:41:13-58
+75            android:value="AIzaSyAGtTYDWrJxZT04j3Kv21W3C0l0BHfXMYE" />
+75-->D:\Lucas\Projetos\AndroidStudio\Parque\app\src\main\AndroidManifest.xml:42:13-68
+76
+77        <activity
+77-->D:\Lucas\Projetos\AndroidStudio\Parque\app\src\main\AndroidManifest.xml:44:9-46:68
+78            android:name="com.example.myapplication.MapsActivity"
+78-->D:\Lucas\Projetos\AndroidStudio\Parque\app\src\main\AndroidManifest.xml:45:13-41
+79            android:label="@string/title_activity_maps" />
+79-->D:\Lucas\Projetos\AndroidStudio\Parque\app\src\main\AndroidManifest.xml:46:13-56
+80        <activity android:name="com.example.myapplication.lojinha" />
+80-->D:\Lucas\Projetos\AndroidStudio\Parque\app\src\main\AndroidManifest.xml:47:9-45
+80-->D:\Lucas\Projetos\AndroidStudio\Parque\app\src\main\AndroidManifest.xml:47:19-42
+81        <activity android:name="com.example.myapplication.OndeBrincar" />
+81-->D:\Lucas\Projetos\AndroidStudio\Parque\app\src\main\AndroidManifest.xml:48:9-49
+81-->D:\Lucas\Projetos\AndroidStudio\Parque\app\src\main\AndroidManifest.xml:48:19-46
+82        <activity android:name="com.example.myapplication.Sugestoes" />
+82-->D:\Lucas\Projetos\AndroidStudio\Parque\app\src\main\AndroidManifest.xml:49:9-47
+82-->D:\Lucas\Projetos\AndroidStudio\Parque\app\src\main\AndroidManifest.xml:49:19-44
+83        <activity android:name="com.example.myapplication.sobre" />
+83-->D:\Lucas\Projetos\AndroidStudio\Parque\app\src\main\AndroidManifest.xml:50:9-43
+83-->D:\Lucas\Projetos\AndroidStudio\Parque\app\src\main\AndroidManifest.xml:50:19-40
+84        <activity android:name="com.example.myapplication.login" />
+84-->D:\Lucas\Projetos\AndroidStudio\Parque\app\src\main\AndroidManifest.xml:51:9-43
+84-->D:\Lucas\Projetos\AndroidStudio\Parque\app\src\main\AndroidManifest.xml:51:19-40
+85        <activity android:name="com.example.myapplication.Balanco" />
+85-->D:\Lucas\Projetos\AndroidStudio\Parque\app\src\main\AndroidManifest.xml:52:9-45
+85-->D:\Lucas\Projetos\AndroidStudio\Parque\app\src\main\AndroidManifest.xml:52:19-42
+86        <activity android:name="com.example.myapplication.Skate" />
+86-->D:\Lucas\Projetos\AndroidStudio\Parque\app\src\main\AndroidManifest.xml:53:9-43
+86-->D:\Lucas\Projetos\AndroidStudio\Parque\app\src\main\AndroidManifest.xml:53:19-40
+87        <activity android:name="com.example.myapplication.RodaRoda" />
+87-->D:\Lucas\Projetos\AndroidStudio\Parque\app\src\main\AndroidManifest.xml:54:9-46
+87-->D:\Lucas\Projetos\AndroidStudio\Parque\app\src\main\AndroidManifest.xml:54:19-43
+88        <activity android:name="com.example.myapplication.Escorregador" />
+88-->D:\Lucas\Projetos\AndroidStudio\Parque\app\src\main\AndroidManifest.xml:55:9-50
+88-->D:\Lucas\Projetos\AndroidStudio\Parque\app\src\main\AndroidManifest.xml:55:19-47
+89        <activity android:name="com.example.myapplication.Basquete" />
+89-->D:\Lucas\Projetos\AndroidStudio\Parque\app\src\main\AndroidManifest.xml:56:9-46
+89-->D:\Lucas\Projetos\AndroidStudio\Parque\app\src\main\AndroidManifest.xml:56:19-43
+90        <activity android:name="com.example.myapplication.Futebol" />
+90-->D:\Lucas\Projetos\AndroidStudio\Parque\app\src\main\AndroidManifest.xml:57:9-45
+90-->D:\Lucas\Projetos\AndroidStudio\Parque\app\src\main\AndroidManifest.xml:57:19-42
+91        <activity android:name="com.example.myapplication.BrincadeirasLista" />
+91-->D:\Lucas\Projetos\AndroidStudio\Parque\app\src\main\AndroidManifest.xml:58:9-55
+91-->D:\Lucas\Projetos\AndroidStudio\Parque\app\src\main\AndroidManifest.xml:58:19-52
+92        <activity android:name="com.example.myapplication.VamosBrincar" />
+92-->D:\Lucas\Projetos\AndroidStudio\Parque\app\src\main\AndroidManifest.xml:59:9-50
+92-->D:\Lucas\Projetos\AndroidStudio\Parque\app\src\main\AndroidManifest.xml:59:19-47
+93        <activity android:name="com.example.myapplication.MeuPerfil" />
+93-->D:\Lucas\Projetos\AndroidStudio\Parque\app\src\main\AndroidManifest.xml:60:9-47
+93-->D:\Lucas\Projetos\AndroidStudio\Parque\app\src\main\AndroidManifest.xml:60:19-44
+94        <activity android:name="com.example.myapplication.Ranking" />
+94-->D:\Lucas\Projetos\AndroidStudio\Parque\app\src\main\AndroidManifest.xml:61:9-45
+94-->D:\Lucas\Projetos\AndroidStudio\Parque\app\src\main\AndroidManifest.xml:61:19-42
+95        <activity android:name="com.example.myapplication.MenuInicial" />
+95-->D:\Lucas\Projetos\AndroidStudio\Parque\app\src\main\AndroidManifest.xml:62:9-49
+95-->D:\Lucas\Projetos\AndroidStudio\Parque\app\src\main\AndroidManifest.xml:62:19-46
+96        <activity android:name="com.example.myapplication.Cadastrar" />
+96-->D:\Lucas\Projetos\AndroidStudio\Parque\app\src\main\AndroidManifest.xml:63:9-47
+96-->D:\Lucas\Projetos\AndroidStudio\Parque\app\src\main\AndroidManifest.xml:63:19-44
+97        <activity android:name="com.example.myapplication.MainActivity" >
+97-->D:\Lucas\Projetos\AndroidStudio\Parque\app\src\main\AndroidManifest.xml:64:9-70:20
+97-->D:\Lucas\Projetos\AndroidStudio\Parque\app\src\main\AndroidManifest.xml:64:19-47
+98            <intent-filter>
+98-->D:\Lucas\Projetos\AndroidStudio\Parque\app\src\main\AndroidManifest.xml:65:13-69:29
+99                <action android:name="android.intent.action.MAIN" />
+99-->D:\Lucas\Projetos\AndroidStudio\Parque\app\src\main\AndroidManifest.xml:66:17-69
+99-->D:\Lucas\Projetos\AndroidStudio\Parque\app\src\main\AndroidManifest.xml:66:25-66
+100
+101                <category android:name="android.intent.category.LAUNCHER" />
+101-->D:\Lucas\Projetos\AndroidStudio\Parque\app\src\main\AndroidManifest.xml:68:17-77
+101-->D:\Lucas\Projetos\AndroidStudio\Parque\app\src\main\AndroidManifest.xml:68:27-74
+102            </intent-filter>
+103        </activity>
+104        <activity
+104-->[com.journeyapps:zxing-android-embedded:3.2.0] C:\Users\lucas\.gradle\caches\transforms-2\files-2.1\ac3308eef45f3a92013bc1ee37b0bc0f\jetified-zxing-android-embedded-3.2.0\AndroidManifest.xml:46:9-52:63
+105            android:name="com.journeyapps.barcodescanner.CaptureActivity"
+105-->[com.journeyapps:zxing-android-embedded:3.2.0] C:\Users\lucas\.gradle\caches\transforms-2\files-2.1\ac3308eef45f3a92013bc1ee37b0bc0f\jetified-zxing-android-embedded-3.2.0\AndroidManifest.xml:47:13-74
+106            android:clearTaskOnLaunch="true"
+106-->[com.journeyapps:zxing-android-embedded:3.2.0] C:\Users\lucas\.gradle\caches\transforms-2\files-2.1\ac3308eef45f3a92013bc1ee37b0bc0f\jetified-zxing-android-embedded-3.2.0\AndroidManifest.xml:48:13-45
+107            android:screenOrientation="sensorLandscape"
+107-->[com.journeyapps:zxing-android-embedded:3.2.0] C:\Users\lucas\.gradle\caches\transforms-2\files-2.1\ac3308eef45f3a92013bc1ee37b0bc0f\jetified-zxing-android-embedded-3.2.0\AndroidManifest.xml:49:13-56
+108            android:stateNotNeeded="true"
+108-->[com.journeyapps:zxing-android-embedded:3.2.0] C:\Users\lucas\.gradle\caches\transforms-2\files-2.1\ac3308eef45f3a92013bc1ee37b0bc0f\jetified-zxing-android-embedded-3.2.0\AndroidManifest.xml:50:13-42
+109            android:theme="@style/zxing_CaptureTheme"
+109-->[com.journeyapps:zxing-android-embedded:3.2.0] C:\Users\lucas\.gradle\caches\transforms-2\files-2.1\ac3308eef45f3a92013bc1ee37b0bc0f\jetified-zxing-android-embedded-3.2.0\AndroidManifest.xml:51:13-54
+110            android:windowSoftInputMode="stateAlwaysHidden" /> <!-- Needs to be explicitly declared on P+ -->
+110-->[com.journeyapps:zxing-android-embedded:3.2.0] C:\Users\lucas\.gradle\caches\transforms-2\files-2.1\ac3308eef45f3a92013bc1ee37b0bc0f\jetified-zxing-android-embedded-3.2.0\AndroidManifest.xml:52:13-60
+111        <uses-library
+111-->[com.google.android.gms:play-services-maps:17.0.0] C:\Users\lucas\.gradle\caches\transforms-2\files-2.1\a3d702a77cbfacefb23de82416a0cb1f\play-services-maps-17.0.0\AndroidManifest.xml:33:9-35:40
+112            android:name="org.apache.http.legacy"
+112-->[com.google.android.gms:play-services-maps:17.0.0] C:\Users\lucas\.gradle\caches\transforms-2\files-2.1\a3d702a77cbfacefb23de82416a0cb1f\play-services-maps-17.0.0\AndroidManifest.xml:34:13-50
+113            android:required="false" />
+113-->[com.google.android.gms:play-services-maps:17.0.0] C:\Users\lucas\.gradle\caches\transforms-2\files-2.1\a3d702a77cbfacefb23de82416a0cb1f\play-services-maps-17.0.0\AndroidManifest.xml:35:13-37
+114
+115        <activity
+115-->[com.google.android.gms:play-services-base:17.0.0] C:\Users\lucas\.gradle\caches\transforms-2\files-2.1\77c2fc448e2bd0738fd67dce062b1efd\play-services-base-17.0.0\AndroidManifest.xml:23:9-26:75
+116            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+116-->[com.google.android.gms:play-services-base:17.0.0] C:\Users\lucas\.gradle\caches\transforms-2\files-2.1\77c2fc448e2bd0738fd67dce062b1efd\play-services-base-17.0.0\AndroidManifest.xml:24:13-79
+117            android:exported="false"
+117-->[com.google.android.gms:play-services-base:17.0.0] C:\Users\lucas\.gradle\caches\transforms-2\files-2.1\77c2fc448e2bd0738fd67dce062b1efd\play-services-base-17.0.0\AndroidManifest.xml:25:13-37
+118            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+118-->[com.google.android.gms:play-services-base:17.0.0] C:\Users\lucas\.gradle\caches\transforms-2\files-2.1\77c2fc448e2bd0738fd67dce062b1efd\play-services-base-17.0.0\AndroidManifest.xml:26:13-72
+119
+120        <meta-data
+120-->[com.google.android.gms:play-services-basement:17.0.0] C:\Users\lucas\.gradle\caches\transforms-2\files-2.1\fba40c2c85387f90c8bc0c8fc342a587\jetified-play-services-basement-17.0.0\AndroidManifest.xml:23:9-25:69
+121            android:name="com.google.android.gms.version"
+121-->[com.google.android.gms:play-services-basement:17.0.0] C:\Users\lucas\.gradle\caches\transforms-2\files-2.1\fba40c2c85387f90c8bc0c8fc342a587\jetified-play-services-basement-17.0.0\AndroidManifest.xml:24:13-58
+122            android:value="@integer/google_play_services_version" />
+122-->[com.google.android.gms:play-services-basement:17.0.0] C:\Users\lucas\.gradle\caches\transforms-2\files-2.1\fba40c2c85387f90c8bc0c8fc342a587\jetified-play-services-basement-17.0.0\AndroidManifest.xml:25:13-66
+123    </application>
+124
+125</manifest>

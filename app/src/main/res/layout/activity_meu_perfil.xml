@@ -1,0 +1,342 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    tools:context=".MeuPerfil"
+    android:background="#38a5db">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MeuPerfil">
+
+        <ImageView
+            android:id="@+id/imageB2"
+            android:layout_width="169dp"
+            android:layout_height="142dp"
+            android:onClick="selecionarB"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/guideline3"
+            app:srcCompat="@drawable/b" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/textInputLayout3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textColorHint="@android:color/background_dark"
+            app:layout_constraintEnd_toStartOf="@+id/guideline"
+            app:layout_constraintStart_toStartOf="@+id/guideline2"
+            app:layout_constraintTop_toBottomOf="@+id/textView20">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:hint="Login"
+                android:paddingTop="0dp"
+                android:text="Jhon2019XD"
+                android:textSize="24sp" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/textInputLayout4"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textColorHint="@android:color/background_dark"
+            app:layout_constraintEnd_toStartOf="@+id/guideline"
+            app:layout_constraintStart_toStartOf="@+id/guideline2"
+            app:layout_constraintTop_toBottomOf="@+id/textInputLayout3">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:hint="Nome"
+                android:paddingTop="0dp"
+                android:text="Pedro Nunes Cavalcante"
+                android:textSize="24sp" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/textInputLayout5"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textColorHint="@android:color/background_dark"
+            app:layout_constraintEnd_toStartOf="@+id/guideline"
+            app:layout_constraintStart_toStartOf="@+id/guideline2"
+            app:layout_constraintTop_toBottomOf="@+id/textInputLayout4">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:hint="E-mail"
+                android:paddingTop="0dp"
+                android:text="PedroNC2019@gmail.com"
+                android:textSize="24sp" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/textInputLayout2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textColorHint="@android:color/background_dark"
+            app:layout_constraintEnd_toStartOf="@+id/guideline"
+            app:layout_constraintStart_toStartOf="@+id/guideline2"
+            app:layout_constraintTop_toBottomOf="@+id/textInputLayout5">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:hint="Senha"
+                android:paddingTop="0dp"
+                android:text="20207555"
+                android:textSize="24sp"
+                android:inputType="textPassword"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <RadioGroup
+            android:id="@+id/radioGroup"
+            android:layout_width="0dp"
+            android:layout_height="106dp"
+            app:layout_constraintEnd_toStartOf="@+id/guideline"
+            app:layout_constraintStart_toStartOf="@+id/guideline2"
+            app:layout_constraintTop_toBottomOf="@+id/textInputLayout2">
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="61dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:paddingTop="0dp"
+                android:text="Sexo"
+                android:textColor="@android:color/background_dark"
+                android:textSize="24sp" />
+
+            <RadioButton
+                android:id="@+id/radioButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:paddingTop="0dp"
+                android:text="Masculino"
+                android:textSize="24sp" />
+
+            <RadioButton
+                android:id="@+id/radioButton2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="0dp"
+                android:text="Feminino"
+                android:textSize="24sp" />
+
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/textView23"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Escolha seu avatar !!"
+            android:textSize="18sp"
+            app:layout_constraintTop_toBottomOf="@+id/radioGroup"
+            tools:layout_editor_absoluteX="25dp" />
+
+        <Button
+            android:id="@+id/button23"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="#db3854"
+            android:onClick="login"
+            android:text="Sair"
+            android:textSize="24sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/button2"
+            app:layout_constraintTop_toBottomOf="@+id/imageE" />
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="#db3854"
+            android:onClick="login"
+            android:text="Salvar"
+            android:textSize="24sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/button23"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageE" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_end="25dp" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_begin="25dp" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_begin="33dp" />
+
+        <ImageView
+            android:id="@+id/imageB"
+            android:layout_width="185dp"
+            android:layout_height="190dp"
+            android:onClick="selecionarB"
+            app:layout_constraintEnd_toStartOf="@+id/imageC"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/imageA"
+            app:layout_constraintTop_toBottomOf="@+id/imageView8"
+            app:srcCompat="@drawable/b" />
+
+        <ImageView
+            android:id="@+id/imageC"
+            android:layout_width="185dp"
+            android:layout_height="190dp"
+            android:onClick="selecionarC"
+            app:layout_constraintEnd_toStartOf="@+id/guideline"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/imageB"
+            app:layout_constraintTop_toTopOf="@+id/imageB"
+            app:srcCompat="@drawable/c" />
+
+        <ImageView
+            android:id="@+id/imageD"
+            android:layout_width="185dp"
+            android:layout_height="190dp"
+            android:layout_marginTop="20dp"
+            android:onClick="selecionarD"
+            app:layout_constraintEnd_toStartOf="@+id/imageE"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="@+id/guideline2"
+            app:layout_constraintTop_toBottomOf="@+id/imageA"
+            app:srcCompat="@drawable/d" />
+
+        <ImageView
+            android:id="@+id/imageA"
+            android:layout_width="185dp"
+            android:layout_height="190dp"
+            android:onClick="selecionarA"
+            app:layout_constraintEnd_toStartOf="@+id/imageB"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="@+id/guideline2"
+            app:layout_constraintTop_toTopOf="@+id/imageB"
+            app:srcCompat="@drawable/a" />
+
+        <ImageView
+            android:id="@+id/imageE"
+            android:layout_width="185dp"
+            android:layout_height="190dp"
+            android:layout_marginTop="20dp"
+            android:onClick="selecionarE"
+            app:layout_constraintEnd_toStartOf="@+id/imageF"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/imageD"
+            app:layout_constraintTop_toBottomOf="@+id/imageB"
+            app:srcCompat="@drawable/e" />
+
+        <ImageView
+            android:id="@+id/imageF"
+            android:layout_width="185dp"
+            android:layout_height="190dp"
+            android:layout_marginTop="20dp"
+            android:onClick="selecionarF"
+            app:layout_constraintEnd_toStartOf="@+id/guideline"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/imageE"
+            app:layout_constraintTop_toBottomOf="@+id/imageC"
+            app:srcCompat="@drawable/f" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_begin="351dp" />
+
+        <ImageView
+            android:id="@+id/avatarGrande"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.52"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView23"
+            app:srcCompat="@drawable/bc" />
+
+        <ImageView
+            android:id="@+id/imageView8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="160dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.54"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/radioGroup"
+            app:srcCompat="@drawable/podio" />
+
+        <TextView
+            android:id="@+id/textView20"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Meu perfil"
+            android:textColor="@android:color/black"
+            android:textSize="36sp"
+            android:textStyle="bold|italic"
+            app:layout_constraintEnd_toStartOf="@+id/guideline"
+            app:layout_constraintStart_toStartOf="@+id/guideline2"
+            app:layout_constraintTop_toBottomOf="@+id/imageB2" />
+
+        <TextView
+            android:id="@+id/textView24"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="1200"
+            android:textColor="#fdd700"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/imageB2"
+            app:layout_constraintEnd_toStartOf="@+id/imageB2"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.507" />
+
+        <ImageView
+            android:id="@+id/imageView13"
+            android:layout_width="73dp"
+            android:layout_height="88dp"
+            android:layout_marginEnd="40dp"
+            android:layout_marginRight="40dp"
+            app:layout_constraintBottom_toBottomOf="@+id/imageB2"
+            app:layout_constraintEnd_toStartOf="@+id/imageB2"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.609"
+            app:srcCompat="@drawable/coin" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.core.widget.NestedScrollView>
